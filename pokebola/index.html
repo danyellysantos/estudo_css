@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div id = "circulo"> 
+    <div id = "elipse"> 
+        <div id="linha-horizontal">
+            <div id="bola">
+                <div id="bolinha">
+                    <div id="botao">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+ </div>
+
+
+    <style>
+     #circulo {
+        background: red;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        border: 10px solid #000;
+
+    }
+
+    #elipse {
+      float: inline-start;
+      width: 300px;
+      height: 300px;
+      margin: 80%;
+      margin-left: auto;
+      margin-top: 50%;
+      shape-outside: circle(50% at 30%);
+      clip-path: circle(50% at 0%);
+      background: white;
+      transform: rotate(90deg);
+      
+    }
+    
+    #linha-horizontal {
+    height: 800px;
+    border: 10px solid #000;
+    position: absolute; top: 5%; left: 5%; transform: translate(-100%, -10%); 
+
+    }
+
+    #bola {
+        background: black;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        position: absolute; top: -4%; left: 1%; transform: translate(-55%, 250%); 
+
+    }
+
+    #bolinha {
+        background: rgb(248, 247, 247);
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        position: absolute; top: -15%; left: 55%; transform: translate(-55%, 45%)
+    }
+
+    #botao {
+        background: white;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #0b0000;
+        position: absolute; top: -30%; left: 55%; transform: translate(-55%, 45%)
+    }
+    </style>
+
+</body>
+
+</html>
